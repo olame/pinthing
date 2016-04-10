@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A0B5152C1CBACC71006265C8 /* test.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A0B5152B1CBACC71006265C8 /* test.gpx */; };
+		A0B515301CBAE436006265C8 /* AddTrackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B5152F1CBAE436006265C8 /* AddTrackController.swift */; };
 		A0C202601CBAC6AD005480F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2025F1CBAC6AD005480F9 /* AppDelegate.swift */; };
-		A0C202621CBAC6AD005480F9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C202611CBAC6AD005480F9 /* FirstViewController.swift */; };
+		A0C202621CBAC6AD005480F9 /* TrackListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C202611CBAC6AD005480F9 /* TrackListController.swift */; };
 		A0C202641CBAC6AD005480F9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C202631CBAC6AD005480F9 /* SecondViewController.swift */; };
 		A0C202671CBAC6AD005480F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C202651CBAC6AD005480F9 /* Main.storyboard */; };
 		A0C202691CBAC6AD005480F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C202681CBAC6AD005480F9 /* Assets.xcassets */; };
@@ -18,9 +19,10 @@
 
 /* Begin PBXFileReference section */
 		A0B5152B1CBACC71006265C8 /* test.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.gpx; sourceTree = "<group>"; };
+		A0B5152F1CBAE436006265C8 /* AddTrackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTrackController.swift; sourceTree = "<group>"; };
 		A0C2025C1CBAC6AD005480F9 /* pinthing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinthing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2025F1CBAC6AD005480F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0C202611CBAC6AD005480F9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A0C202611CBAC6AD005480F9 /* TrackListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListController.swift; sourceTree = "<group>"; };
 		A0C202631CBAC6AD005480F9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A0C202661CBAC6AD005480F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0C202681CBAC6AD005480F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +49,26 @@
 			name = data;
 			sourceTree = "<group>";
 		};
+		A0B5152D1CBAD014006265C8 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				A0C2026A1CBAC6AD005480F9 /* LaunchScreen.storyboard */,
+				A0C202681CBAC6AD005480F9 /* Assets.xcassets */,
+				A0C202651CBAC6AD005480F9 /* Main.storyboard */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		A0B5152E1CBAE400006265C8 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0C202611CBAC6AD005480F9 /* TrackListController.swift */,
+				A0C202631CBAC6AD005480F9 /* SecondViewController.swift */,
+				A0B5152F1CBAE436006265C8 /* AddTrackController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
 		A0C202531CBAC6AC005480F9 = {
 			isa = PBXGroup;
 			children = (
@@ -66,13 +88,10 @@
 		A0C2025E1CBAC6AD005480F9 /* pinthing */ = {
 			isa = PBXGroup;
 			children = (
+				A0B5152E1CBAE400006265C8 /* controllers */,
+				A0B5152D1CBAD014006265C8 /* assets */,
 				A0B5152A1CBACBE2006265C8 /* data */,
 				A0C2025F1CBAC6AD005480F9 /* AppDelegate.swift */,
-				A0C202611CBAC6AD005480F9 /* FirstViewController.swift */,
-				A0C202631CBAC6AD005480F9 /* SecondViewController.swift */,
-				A0C202651CBAC6AD005480F9 /* Main.storyboard */,
-				A0C202681CBAC6AD005480F9 /* Assets.xcassets */,
-				A0C2026A1CBAC6AD005480F9 /* LaunchScreen.storyboard */,
 				A0C2026D1CBAC6AD005480F9 /* Info.plist */,
 			);
 			path = pinthing;
@@ -151,8 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C202641CBAC6AD005480F9 /* SecondViewController.swift in Sources */,
+				A0B515301CBAE436006265C8 /* AddTrackController.swift in Sources */,
 				A0C202601CBAC6AD005480F9 /* AppDelegate.swift in Sources */,
-				A0C202621CBAC6AD005480F9 /* FirstViewController.swift in Sources */,
+				A0C202621CBAC6AD005480F9 /* TrackListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
