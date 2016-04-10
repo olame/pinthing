@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A0B5152C1CBACC71006265C8 /* test.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A0B5152B1CBACC71006265C8 /* test.gpx */; };
 		A0B515301CBAE436006265C8 /* AddTrackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B5152F1CBAE436006265C8 /* AddTrackController.swift */; };
+		A0B515331CBAF456006265C8 /* RepositoryBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B515321CBAF456006265C8 /* RepositoryBase.swift */; };
 		A0C202601CBAC6AD005480F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2025F1CBAC6AD005480F9 /* AppDelegate.swift */; };
 		A0C202621CBAC6AD005480F9 /* TrackListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C202611CBAC6AD005480F9 /* TrackListController.swift */; };
 		A0C202641CBAC6AD005480F9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C202631CBAC6AD005480F9 /* SecondViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		A0B5152B1CBACC71006265C8 /* test.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.gpx; sourceTree = "<group>"; };
 		A0B5152F1CBAE436006265C8 /* AddTrackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTrackController.swift; sourceTree = "<group>"; };
+		A0B515321CBAF456006265C8 /* RepositoryBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryBase.swift; sourceTree = "<group>"; };
 		A0C2025C1CBAC6AD005480F9 /* pinthing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinthing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2025F1CBAC6AD005480F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C202611CBAC6AD005480F9 /* TrackListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackListController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			name = controllers;
 			sourceTree = "<group>";
 		};
+		A0B515311CBAF436006265C8 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				A0B515321CBAF456006265C8 /* RepositoryBase.swift */,
+			);
+			name = repository;
+			sourceTree = "<group>";
+		};
 		A0C202531CBAC6AC005480F9 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		A0C2025E1CBAC6AD005480F9 /* pinthing */ = {
 			isa = PBXGroup;
 			children = (
+				A0B515311CBAF436006265C8 /* repository */,
 				A0B5152E1CBAE400006265C8 /* controllers */,
 				A0B5152D1CBAD014006265C8 /* assets */,
 				A0B5152A1CBACBE2006265C8 /* data */,
@@ -169,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B515331CBAF456006265C8 /* RepositoryBase.swift in Sources */,
 				A0C202641CBAC6AD005480F9 /* SecondViewController.swift in Sources */,
 				A0B515301CBAE436006265C8 /* AddTrackController.swift in Sources */,
 				A0C202601CBAC6AD005480F9 /* AppDelegate.swift in Sources */,

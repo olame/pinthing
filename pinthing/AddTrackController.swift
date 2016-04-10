@@ -8,6 +8,29 @@
 
 import UIKit
 class AddTrackController: UIViewController {
+    @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var trackPath: UITextField!
+    @IBAction func addTrackClicked(sender: AnyObject) {
+        
+        if let url = NSURL(string: trackPath.text!) {
+            let repository = RepositoryBase()
+            
+            repository.getGpx(url){
+                
+                (let data, let response, let error) in
+                
+                guard let httpResponse = response as? NSHTTPURLResponse else {
+                    return
+                }
+                
+                dispatch_async(dispatch_get_main_queue()){
+
+                    self.result.text = "\(httpResponse.statusCode)"
+                }
+            }
+
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
