@@ -12,11 +12,12 @@ class AddTrackController: UIViewController {
     @IBOutlet weak var trackPath: UITextField!
     @IBAction func addTrackClicked(sender: AnyObject) {
         
+        
         if let url = NSURL(string: trackPath.text!) {
             let repository = RepositoryBase()
             
             repository.getGpx(url){
-                
+                ///gggg
                 (let data, let response, let error) in
                 
                 guard let httpResponse = response as? NSHTTPURLResponse else {
