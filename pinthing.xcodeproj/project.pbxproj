@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0B5152C1CBACC71006265C8 /* test.gpx in Resources */ = {isa = PBXBuildFile; fileRef = A0B5152B1CBACC71006265C8 /* test.gpx */; };
 		A0C202601CBAC6AD005480F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C2025F1CBAC6AD005480F9 /* AppDelegate.swift */; };
 		A0C202621CBAC6AD005480F9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C202611CBAC6AD005480F9 /* FirstViewController.swift */; };
 		A0C202641CBAC6AD005480F9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C202631CBAC6AD005480F9 /* SecondViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A0B5152B1CBACC71006265C8 /* test.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.gpx; sourceTree = "<group>"; };
 		A0C2025C1CBAC6AD005480F9 /* pinthing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinthing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C2025F1CBAC6AD005480F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C202611CBAC6AD005480F9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0B5152A1CBACBE2006265C8 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				A0B5152B1CBACC71006265C8 /* test.gpx */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
 		A0C202531CBAC6AC005480F9 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		A0C2025E1CBAC6AD005480F9 /* pinthing */ = {
 			isa = PBXGroup;
 			children = (
+				A0B5152A1CBACBE2006265C8 /* data */,
 				A0C2025F1CBAC6AD005480F9 /* AppDelegate.swift */,
 				A0C202611CBAC6AD005480F9 /* FirstViewController.swift */,
 				A0C202631CBAC6AD005480F9 /* SecondViewController.swift */,
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C2026C1CBAC6AD005480F9 /* LaunchScreen.storyboard in Resources */,
+				A0B5152C1CBACC71006265C8 /* test.gpx in Resources */,
 				A0C202691CBAC6AD005480F9 /* Assets.xcassets in Resources */,
 				A0C202671CBAC6AD005480F9 /* Main.storyboard in Resources */,
 			);
@@ -288,6 +300,7 @@
 				A0C202721CBAC6AD005480F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
