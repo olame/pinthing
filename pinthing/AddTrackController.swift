@@ -24,9 +24,10 @@ class AddTrackController: UIViewController {
                     return
                 }
                 
+                
                 dispatch_async(dispatch_get_main_queue()){
 
-                    self.result.text = "\(httpResponse.statusCode)"
+                    self.result.text = "Server answer is: \(httpResponse.statusCode)"
                 }
             }
 
